@@ -22,6 +22,7 @@
             btncolor: "#B68C5A",
             inputcolor: "#F3F3F3",
             footercolor: "#111111",
+            accrodioncolor: "#F3F3F3",
           },
           fontFamily: {
             eb: ["EB Garamond", "serif"],
@@ -144,10 +145,53 @@
     </section>
 
     <!-- Questions Pannel -->
-    <section class="text-center mt-32">
+    <section class="mt-32">
+     <div class="text-center">
       <h1 class="text-4xl font-eb pb-6">Frequently Asked Any Questions</h1>
       <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have <br>
         suffered alteration in some form, by injected humour.</p>
+     </div>
+        
+        <!-- accrodion -->
+     <div class="grid grid-cols-2 gap-8 mt-16 ">
+      <div class="drop-shadow rounded-lg">
+        <!-- The First FAQ -->
+        <details class="bg-accrodioncolor ">
+            <summary class="bg-accrodioncolor py-8 text-2xl font-eb ">1.Difference Between Flex and Grid</summary>
+            <div class="bg-accrodioncolor py-3 ">
+                <p class="font-poppins">The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.</p>
+            </div>
+        </details>
+
+        <!-- The Second FAQ -->
+        <details class="bg-accrodioncolor ">
+            <summary class="bg-inherit py-8 text-2xl font-eb ">2.what is the Purpose of @media Quary</summary>
+            <div class="bg-accrodioncolor px-5 py-3 ">
+                <p class="font-poppins">Media queries allow you to apply CSS styles depending on a device's general type (such as print vs. screen) or other characteristics such as screen resolution or browser viewport width.</p>
+            </div>
+        </details>
+       <!-- The Third FAQ -->
+        <details class="bg-accrodioncolor ">
+            <summary class="bg-accrodioncolor py-8 text-2xl font-eb ">3.What is the CSS Box Model</summary>
+            <div class="bg-accrodioncolor px-5 py-3 ">
+                <p class="font-poppins">The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself. It is used to create the design and layout of web pages.</p>
+            </div>
+        </details>
+        <!-- The Fourth Questions -->
+        <details class="bg-accrodioncolor ">
+          <summary class="bg-accrodioncolor py-8 text-2xl font-eb ">4.What is an HTML Semantic Tag</summary>
+          <div class="bg-accrodioncolor px-5 py-3 ">
+              <p class="font-poppins">HTML Semantic tags introduce meaning to the web page rather than just presentation. A semantic tag clearly describes its meaning to both the browser and the developer. Semantic tags have many advantages over non-semantic tags like semantic tags are of great help to screen readers, and they also help in code optimization.
+
+              </p>
+          </div>
+      </details>
+    </div>
+
+    <div>
+      <img src="images/faq.png" alt="">
+    </div>
+     </div>
     </section>
     <section>
 
