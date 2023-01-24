@@ -1,123 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment-3</title>
-    <!-- font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <!-- tailwind link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                btncolor: "#B68C5A",
-              },
-              fontFamily: {
-                eb: ["EB Garamond", "serif"],
-                poppins: ["Poppins", "sans-serif"],
-               },
-            },
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment-3</title>
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <!-- tailwind link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            btncolor: "#B68C5A",
+            inputcolor: "#F3F3F3",
           },
-        };
-      </script>
+          fontFamily: {
+            eb: ["EB Garamond", "serif"],
+            poppins: ["Poppins", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
 </head>
+
 <body class="mx-96">
-    <!-- header -->
-    <header>
-        <!-- navigation -->
-        <section class="flex justify-between mt-12">
-            <div class="flex gap-4">
-                <img class="w-11 h-11" src="images/logo2 - Copy.png" alt="">
-                <h1 class="text-3xl font-eb mt-2">Justice</h1>
-            </div>
-            <div class="flex gap-7 font-poppins mt-5">
-                <p>Home</p>
-                <p>Services</p>
-                <p>Cases</p>
-                <p>Bog</p>
-                <p>Contact Us</p>
-            </div>
-            <div>
-                <button class="bg-btncolor px-7 py-5 rounded-lg text-lg text-white font-poppins" >Free Consultation</button>
-            </div>
-        </section>
-        <!-- banner -->
-        <section  class="bg-[url('images/banner.png')] h-[550px] mt-12 rounded-lg text-center pt-24">
-            <div>
-              <h1 class="text-7xl text-white font-eb ">We Provide Effective <br> Legal Solutions</h1>
-              <p class="text-white font-poppins pt-6 pb-7">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
-            </div>
-            <div>
-              <input type="search" class="py-4 pl-5 pr-80 rounded-lg mr-6" name="" placeholder="Search your services" id="">
-              <button class="bg-btncolor px-10 py-4 text-white rounded-lg font-poppins text-sm">Search</button>
-            </div>
-        </section>
-      </header>
-      <!-- main -->
-      <main>
-      <section class="text-center mt-28">
-        <h1 class="text-4xl  font-eb ">The Legal Practice Area</h1>
-        <p class="font-poppins pt-6">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
-      </section>
+  <!-- header -->
+  <header>
+    <!-- navigation -->
+    <section class="flex justify-between mt-12">
+      <div class="flex gap-4">
+        <img class="w-11 h-11" src="images/logo2 - Copy.png" alt="">
+        <h1 class="text-3xl font-eb mt-2">Justice</h1>
+      </div>
+      <div class="flex gap-7 font-poppins mt-5">
+        <p>Home</p>
+        <p>Services</p>
+        <p>Cases</p>
+        <p>Bog</p>
+        <p>Contact Us</p>
+      </div>
+      <div>
+        <button class="bg-btncolor px-7 py-5 rounded-lg text-lg text-white font-poppins">Free Consultation</button>
+      </div>
+    </section>
+    <!-- banner -->
+    <section class="bg-[url('images/banner.png')] h-[550px] mt-12 rounded-lg text-center pt-24">
+      <div>
+        <h1 class="text-7xl text-white font-eb ">We Provide Effective <br> Legal Solutions</h1>
+        <p class="text-white font-poppins pt-6 pb-7">There are many variations of passages of Lorem Ipsum available, but
+          the majority <br> have suffered alteration in some form, by injected humour.</p>
+      </div>
+      <div>
+        <input type="search" class="py-4 pl-5 pr-80 rounded-lg mr-6" name="" placeholder="Search your services" id="">
+        <button class="bg-btncolor px-10 py-4 text-white rounded-lg font-poppins text-sm">Search</button>
+      </div>
+    </section>
+  </header>
+  <!-- main -->
+  <main>
+    <section class="text-center mt-28">
+      <h1 class="text-4xl  font-eb ">The Legal Practice Area</h1>
+      <p class="font-poppins pt-6">There are many variations of passages of Lorem Ipsum available, but the majority have
+        <br> suffered alteration in some form, by injected humour.</p>
+    </section>
 
-      <section class="grid grid-cols-3 gap text-center">
-        <div class="p-16">
-          <img class="h-16 w16 pos bg-center m-auto" src="images/business.png" alt="">
-          <h1 class="font-eb text-3xl pt-8 pb-6">Business Law</h1>
-          <p class="font-poppins pb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis aspernatur dignissimos, consectetur facere nihil eligendi velit dicta facilis incidunt perferendis animi tempora ullam molestias nemo accus</p>
-          <img class="m-auto" src="images/frame.png" alt="">
-        </div>
-        <div class="p-16">
-          <img class="h-16 w16 pos bg-center m-auto" src="images/criminal.png" alt="">
-          <h1 class="font-eb text-3xl pt-8 pb-6">Criminal Law</h1>
-          <p class="font-poppins pb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque porro maiores temporibus sint nostrum? Magni excepturi ut fugit nulla vel at quibusdam, accusamus id, incidunt pariatur tempora laboriosam eos quas?</p>
-          <img class="m-auto" src="images/frame.png" alt="">
-        </div>
-        <div class="p-16">
-          <img class="h-16 w16 pos bg-center m-auto" src="images/child.png" alt="">
-          <h1 class="font-eb text-3xl pt-8 pb-6">Child Support</h1>
-          <p class="font-poppins pb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum laboriosam ipsum fugit, aliquam dolorem voluptatum numquam quaerat assumenda repellat deserunt animi molestias itaque, labore nulla accusantium maxi</p>
-          <img class="m-auto" src="images/frame.png" alt="">
-        </div>
-        <div class="p-16">
-          <img class="h-16 w16 pos bg-center m-auto" src="images/education.png" alt="">
-          <h1 class="font-eb text-3xl pt-8 pb-6">Education Law</h1>
-          <p class="font-poppins pb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente eos magni quis. Accusamus qui dolorem debitis, beatae illum voluptate eligendi omnis vitae placeat eum aliquid ipsum sapiente iusto natus suscipit?</p>
-          <img class="m-auto" src="images/frame.png" alt="">
-        </div>
-        <div class="p-16">
-          <img class="h-16 w16 pos bg-center m-auto" src="images/divorce.png" alt="">
-          <h1 class="font-eb text-3xl pt-8 pb-6">Divorce Law</h1>
-          <p class="font-poppins pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur aspernatur nisi rerum delectus dignissimos! Temporibus, aut illo illum ipsam totam doloribus neque deserunt, ipsa consequuntur dicta laudanyyj</p>
-          <img class="m-auto" src="images/frame.png" alt="">
-        </div>
-        <div class="p-16">
-          <img class="h-16 w16 pos bg-center m-auto" src="images/tax.png" alt="">
-          <h1 class="font-eb text-3xl pt-8 pb-6">Tax Law</h1>
-          <p class="font-poppins pb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati neque nesciunt mollitia aliquam quasi deleniti, eaque ratione soluta rem maxime fugit impedit consequatur doloremque tempora libero ad illo doloribus ab.</p>
-          <img class="m-auto" src="images/frame.png" alt="">
-        </div>
-      </section>
+    <section class="grid grid-cols-3 gap text-center">
+      <div class="p-16">
+        <img class="h-16 w16 pos bg-center m-auto" src="images/business.png" alt="">
+        <h1 class="font-eb text-3xl pt-8 pb-6">Business Law</h1>
+        <p class="font-poppins pb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae blanditiis
+          aspernatur dignissimos, consectetur facere nihil eligendi velit dicta facilis incidunt perferendis animi
+          tempora ullam molestias nemo accus</p>
+        <img class="m-auto" src="images/frame.png" alt="">
+      </div>
+      <div class="p-16">
+        <img class="h-16 w16 pos bg-center m-auto" src="images/criminal.png" alt="">
+        <h1 class="font-eb text-3xl pt-8 pb-6">Criminal Law</h1>
+        <p class="font-poppins pb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque porro maiores
+          temporibus sint nostrum? Magni excepturi ut fugit nulla vel at quibusdam, accusamus id, incidunt pariatur
+          tempora laboriosam eos quas?</p>
+        <img class="m-auto" src="images/frame.png" alt="">
+      </div>
+      <div class="p-16">
+        <img class="h-16 w16 pos bg-center m-auto" src="images/child.png" alt="">
+        <h1 class="font-eb text-3xl pt-8 pb-6">Child Support</h1>
+        <p class="font-poppins pb-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum laboriosam ipsum
+          fugit, aliquam dolorem voluptatum numquam quaerat assumenda repellat deserunt animi molestias itaque, labore
+          nulla accusantium maxi</p>
+        <img class="m-auto" src="images/frame.png" alt="">
+      </div>
+      <div class="p-16">
+        <img class="h-16 w16 pos bg-center m-auto" src="images/education.png" alt="">
+        <h1 class="font-eb text-3xl pt-8 pb-6">Education Law</h1>
+        <p class="font-poppins pb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente eos magni quis.
+          Accusamus qui dolorem debitis, beatae illum voluptate eligendi omnis vitae placeat eum aliquid ipsum sapiente
+          iusto natus suscipit?</p>
+        <img class="m-auto" src="images/frame.png" alt="">
+      </div>
+      <div class="p-16">
+        <img class="h-16 w16 pos bg-center m-auto" src="images/divorce.png" alt="">
+        <h1 class="font-eb text-3xl pt-8 pb-6">Divorce Law</h1>
+        <p class="font-poppins pb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur tenetur
+          aspernatur nisi rerum delectus dignissimos! Temporibus, aut illo illum ipsam totam doloribus neque deserunt,
+          ipsa consequuntur dicta laudanyyj</p>
+        <img class="m-auto" src="images/frame.png" alt="">
+      </div>
+      <div class="p-16">
+        <img class="h-16 w16 pos bg-center m-auto" src="images/tax.png" alt="">
+        <h1 class="font-eb text-3xl pt-8 pb-6">Tax Law</h1>
+        <p class="font-poppins pb-8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati neque nesciunt
+          mollitia aliquam quasi deleniti, eaque ratione soluta rem maxime fugit impedit consequatur doloremque tempora
+          libero ad illo doloribus ab.</p>
+        <img class="m-auto" src="images/frame.png" alt="">
+      </div>
+    </section>
 
-      <section class="text-center mt-32">
-        <h1 class="font-eb text-4xl mb-6">What Our Client Say</h1>
-        <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
-      </section>
+    <section class="text-center mt-32">
+      <h1 class="font-eb text-4xl mb-6">What Our Client Say</h1>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration
+        in some form, by injected humour.</p>
+    </section>
 
-      <section class="bg-[url('images/banner.png')] text-white h-[500px] text-center items-center mt-16 rounded-lg">
-        <div class="py-24 ">
-          <img class="w-16 h-16 mx-auto mb-6" src="images/user-icon.png" alt="">
+    <section class="bg-[url('images/banner.png')] text-white h-[500px] text-center items-center mt-16 rounded-lg">
+      <div class="py-24 ">
+        <img class="w-16 h-16 mx-auto mb-6" src="images/user-icon.png" alt="">
         <h1 class="font-eb text-2xl">Awlad Hossain</h1>
         <p>UIX Designer</p>
-        <p class="font-poppins mt-8 leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
+        <p class="font-poppins mt-8 leading-6">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+          roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old. Richard
+          McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia, looked up one of the more obscure
+          Latin words, consectetur.</p>
+      </div>
+    </section>
+
+    <!-- Questions Pannel -->
+    <section class="text-center mt-32">
+      <h1 class="text-4xl font-eb pb-6">Frequently Asked Any Questions</h1>
+      <p class="font-poppins">There are many variations of passages of Lorem Ipsum available, but the majority have <br>
+        suffered alteration in some form, by injected humour.</p>
+    </section>
+    <section>
+
+    </section>
+
+    <!-- contuct Pannel -->
+    <section class="text-center mt-32">
+      <h1 class="text-4xl font-eb pb-8">Contact With Us</h1>
+      <p class="font-poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. At tenetur molestias possimus
+        soluta. <br> Itaque, laudantium amet ea delectus quia consectetur</p>
+
+      <div class="grid grid-cols-2 mt-16">
+        <div class="grid grid-cols-2">
+          <div class="p-16">
+            <img class="mx-auto" src="images/location.png" alt="">
+            <h1 class="font-eb text-2xl py-4">Address</h1>
+            <p>A108 Adam Street, <br>
+              New York, NY 535022</p>
+          </div>
+          <div class="p-16">
+            <img class="mx-auto" src="images/call.png" alt="">
+            <h1 class="font-eb text-2xl py-4">Call Us</h1>
+            <p>+88 01750 00 00 00 <br>
+              +88 01750 00 00 00</p>
+          </div>
+          <div class="p-16">
+            <img class="mx-auto" src="images/email.png" alt="">
+            <h1 class="font-eb text-2xl py-4">Eamil Us</h1>
+            <p>info@gmail.com <br>
+              info@gmail.com</p>
+          </div>
+          <div class="p-16">
+            <img class="mx-auto" src="images/time.png" alt="">
+            <h1 class="font-eb text-2xl py-4">Working Hours</h1>
+            <p>Mon-Fri: 9AM to 5PM <br>
+              Sunday: 9AM to 1 PM</p>
+          </div>
         </div>
-      </section>
-    </main>
+        <div>
+          <div class="grid gap-10">
+            <div><input class="w-full rounded-lg pl-6 font-poppins bg-inputcolor h-16" type="text" name="" placeholder="Your Name" id=""></div>
+            <div><input class="w-full rounded-lg pl-6 font-poppins bg-inputcolor h-16"type="email" name="" placeholder="Your Email" id=""></div>
+            <div><input class="w-full rounded-lg pl-6 font-poppins bg-inputcolor h-16"type="text" name="" placeholder="Subject" id=""></div>
+            <div><input class="w-full rounded-lg pl-6 font-poppins bg-inputcolor h-40"type="text" name="" placeholder="Your Message" id=""></div>
+          </div>
+          <div><button class="bg-btncolor w-full h-16 rounded-lg text-white font-poppins">Send Message</button></div>
+        </div>
+
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
