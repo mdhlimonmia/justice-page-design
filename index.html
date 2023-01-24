@@ -21,6 +21,7 @@
           colors: {
             btncolor: "#B68C5A",
             inputcolor: "#F3F3F3",
+            footercolor: "#111111",
           },
           fontFamily: {
             eb: ["EB Garamond", "serif"],
@@ -32,9 +33,9 @@
   </script>
 </head>
 
-<body class="mx-96">
+<body>
   <!-- header -->
-  <header>
+  <header  class="mx-96">
     <!-- navigation -->
     <section class="flex justify-between mt-12">
       <div class="flex gap-4">
@@ -66,7 +67,7 @@
     </section>
   </header>
   <!-- main -->
-  <main>
+  <main  class="mx-96">
     <section class="text-center mt-28">
       <h1 class="text-4xl  font-eb ">The Legal Practice Area</h1>
       <p class="font-poppins pt-6">There are many variations of passages of Lorem Ipsum available, but the majority have
@@ -198,6 +199,36 @@
       </div>
     </section>
   </main>
+  <!-- footer  -->
+  <footer class="text-white bg-footercolor flex justify-between px-96 pt-32 pb-24 font-poppins ">
+    <div>
+      <img class=" pb-8" src="images/logo.png" alt="">
+      <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some <br> form, by injected humour.</p>
+    </div>
+    <div >
+      <h1 class="font-eb text-2xl pb-12">Usefull Link</h1>
+      <a  href="">Home</a><br>
+      <a class="py-4" href="">About Us</a><br>
+      <a href="">Cases</a><br>
+      <a class="py-4" href="">Blog</a><br>
+      <a href="">Contuct Us</a>
+    </div>
+    <div>
+      <h1 class="font-eb text-2xl pb-12">Contact Now</h1>
+      <p>555 4th 5t NW, Washington <br>
+        DC 20530, United States</p>
+      <p class="py-4">+88 01750 000 000 <br>
+          +88 01750 000 000</p>
+      <p>info@gmail.com <br>
+        info@gmail.com</p>
+    </div>
+    <div>
+      <h1 class="font-eb text-2xl pb-12">Subscribe</h1>
+      <p class=" pb-6">Subscribe for our latest & <br>
+         Articles. We Won’t Give You <br> Spam Mails</p>
+      <input class="h-16 rounded-lg pl-8" type="email" placeholder="Email Address" name="" id="">
+    </div>
+  </footer>
 </body>
 
 </html>
